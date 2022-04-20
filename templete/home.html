@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Muhammad {{name}}</h1>
+<h2>2018-EE-12</h2>
+
+<form action="add" method="post">
+    {% csrf_token%}
+
+    Enter first number = <input type="text" name="num1"><br>
+    Enter second number = <input type="text" name="num2"><br>
+    <input type="submit">
+</form>
+
+
+{% endblock %}
